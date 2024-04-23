@@ -91,7 +91,7 @@ else:
 
 ```
 ## Sample Input and Output
-![image](https://github.com/bala23005271/Search-Algorithms/assets/155039753/7d6c697a-7bb0-4010-a501-9383e5300fc1)
+![image](https://github.com/bala23005271/Search-Algorithms/assets/155039753/19564851-72d5-4d63-b07e-f3fb8b1a88d0)
 ![image](https://github.com/bala23005271/Search-Algorithms/assets/155039753/063bf714-6aea-4d68-84c0-a8b1b3233913)
 ![image](https://github.com/bala23005271/Search-Algorithms/assets/155039753/4cb6766e-be9e-4302-ade8-b0facbf2feed)
 
