@@ -19,13 +19,48 @@ To write a program to perform linear search and binary search using python progr
 ## Program:
 i)	#Use a linear search method to match the item in a list.
 ```
-
+def search(array,key,n):
+    for i in range(0,n):
+        if key==array[i]:
+            return i
+            
+    
+    return -1
+array=eval(input())
+key=int(input())
+array.sort()
+n=len(array)
+print(array)
+result=search(array,key,n)
+if result==-1:
+  print("Element not found")
+else:
+ print("Element found at index: ",result)
 
 
 ```
 ii)	# Find the element in a list using Binary Search(Iterative Method).
 ```
-
+def binary(array,key,low,high):
+    while(low<=high):
+        mid=low+(high-low)//2
+        if array[mid]==key:
+            return mid
+        elif array[mid]<key:
+            low=mid+1
+        elif array[mid]>key:
+            high=mid-1
+    return -1
+array=eval(input())
+key=int(input())
+array.sort()
+low,high=0,len(array)-1
+print(array)
+result=binary(array,key,low,high)
+if result==-1:
+    print("Element not found ")
+else:
+    print("Element found at index: ",result)
 
 
 
@@ -33,18 +68,32 @@ ii)	# Find the element in a list using Binary Search(Iterative Method).
 ```
 iii)	# Find the element in a list using Binary Search (recursive Method).
 ```
-
-
-
-
+def binary(array,key,low,high):
+    if high>=low:
+        mid=low+(high-low)//2
+        if array[mid]==key:
+            return mid
+        elif array[mid]<key:
+            return binary(array,key,mid+1,high)
+        elif array[mid]>key:
+            return binary(array,key,low,mid-1)
+    return -1
+array=eval(input())
+key=int(input())
+array.sort()
+low,high=0,len(array)-1
+print(array)
+result=binary(array,key,low,high)
+if result==-1:
+    print("Element not found")
+else:
+    print("Element found at index: ",result)
 
 ```
 ## Sample Input and Output
-
-
-
-
-
+![image](https://github.com/bala23005271/Search-Algorithms/assets/155039753/7d6c697a-7bb0-4010-a501-9383e5300fc1)
+![image](https://github.com/bala23005271/Search-Algorithms/assets/155039753/063bf714-6aea-4d68-84c0-a8b1b3233913)
+![image](https://github.com/bala23005271/Search-Algorithms/assets/155039753/4cb6766e-be9e-4302-ade8-b0facbf2feed)
 
 ## Result
 Thus the linear search and binary search algorithm is implemented using python programming.
